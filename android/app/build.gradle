@@ -51,6 +51,10 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 }
 
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialIcons.ttf', 'FontAwesome.ttf','FontAwesome5.ttf', 'MaterialCommunityIcons.ttf', 'Ionicons.ttf','Octicons.ttf','Zocial.ttf'] // Name of the font files you want to copy
+]
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
